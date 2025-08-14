@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+      #name:focus{
+        background-color: aqua;
+      }
+      #email:focus{
+        background-color: rgb(156, 198, 231);
+      }
+      #url:focus{
+         background-color: rgb(156, 198, 231);
+      }
+      #pass:focus{
+       background-color: rgb(156, 198, 231);
+      }
+      input:checked+label{
+      color: rgb(7, 212, 75);
+      }
+    </style>
+</head>
+<body>
+    <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-success">
+  <div class="container">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Content</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Service</a>
+        </li>
+        </div>
+     <form class="d-flex gap-5 align-items-center" role="search">
+        <i class="bi bi-person-circle fs-2"></i>
+        <button class="btn btn-dark" type="submit">Login</button>
+      </form>
+  </div>
+</nav>
+<section class="w-50 m-auto shadow-lg p-5">
+   <h1 class="text-center">Register your account</h1>
+    <form action="#"  class="needs-validation" novalidate>
+       <div>
+        <label for="name">Name</label>
+        <input class="form-control" type="text" name="name" id="name" maxlength="10" pattern="[A-Za-z ]+" required>
+         <div class="invalid-feedback">
+                <p class="text-danger">Please Provide the Valid name </p>
+            </div>
+            <div class="valid-feedback">
+                <p>looks good</p>
+            </div>
+       </div>
+       <div>
+        <label for="name">URL</label>
+        <input class="form-control" type="text" name="name" id="url" maxlength="10" pattern="[A-Za-z ]+" required>
+         <div class="invalid-feedback">
+                <p class="text-danger">Please Provide the Valid name </p>
+            </div>
+            <div class="valid-feedback">
+                <p>looks good</p>
+            </div>
+       </div>
+       <div>
+        <label for="name">Email</label>
+        <input class="form-control" type="email" name="name" id="email" required>
+         <div class="invalid-feedback">
+                <p class="text-danger">Please Provide the Valid name </p>
+            </div>
+            <div class="valid-feedback">
+                <p>looks good</p>
+            </div>
+       </div>
+       <div>
+        <label for="name">Password</label>
+        <input class="form-control" type="password" name="name" id="pass" maxlength="8" pattern="[A-Za-z ]+" required>
+        <input type="checkbox" onclick="pass.type=this.checked?'text':'password'">
+         <div class="invalid-feedback">
+                <p class="text-danger">Please Provide the Valid name </p>
+            </div>
+            <div class="valid-feedback">
+                <p>looks good</p>
+            </div>
+       </div>
+       <div>
+        <input type="checkbox" id="abc" required >
+        <label for="abc" >Accept the term and conditions</label>
+         <div class="invalid-feedback">
+                <p class="text-danger">Please Provide the Valid name </p>
+            </div>
+            <div class="valid-feedback">
+                <p>looks good</p>
+            </div>
+       </div>
+       <div class="text-center ">
+        <input class="btn btn-success w-25" type="submit" value="Registration">
+       </div>
+       <div>
+
+       </div>
+
+
+    </form>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+ </script>
+    
+  </body>
+</html>
+</body>
+</html>
